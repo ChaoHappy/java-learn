@@ -1,4 +1,4 @@
-package com.chaohappy.java8.lambda.test;
+package com.chaohappy.java8.lambda;
 
 import java.util.Comparator;
 import java.util.function.Consumer;
@@ -17,7 +17,7 @@ import org.junit.Test;
  * 	左侧推断类型省
  * 	
  */
-public class TestLambda2 {
+public class TestLambda1 {
 	/*
 	 * 	语法格式一：无参数，无返回值 
 	 *  () -> System.out.println("Hello Lambda!");
@@ -95,7 +95,7 @@ public class TestLambda2 {
 		operation(100, (x) -> x * x);
 	}
 	
-	public Integer operation(Integer num,MyFun mf) {
+	public Integer operation(Integer num,MyFun1 mf) {
 		return mf.getValue(num);
 	}
 }
